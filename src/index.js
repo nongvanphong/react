@@ -9,6 +9,7 @@ import Bai5 from './Bai5';
 import Gif from './Gif';
 import ChangeTheme from './ChangeTheme/ChangeTheme';
 import Pickimgcamera from './Pickimgcamera/Pickimgcamera';
+import Chupanh from './Pickimgcamera/Chupanh';
 export {
   Bai3,
   Bai4,
@@ -21,4 +22,5 @@ export {
   Gif,
   ChangeTheme,
   Pickimgcamera,
+  Chupanh,
 };

@@ -12,6 +12,7 @@ import {
   Gif,
   ChangeTheme,
   Pickimgcamera,
+  Chupanh,
 } from './src';
 
 const App = () => {
@@ -30,7 +31,8 @@ const App = () => {
     // <Test></Test>
     //<Gif></Gif>
     //<ChangeTheme></ChangeTheme>
-    <Pickimgcamera></Pickimgcamera>
+    // <Pickimgcamera></Pickimgcamera>
+    <Chupanh></Chupanh>
   );
 };
 
