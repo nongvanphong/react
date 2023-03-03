@@ -10,6 +10,8 @@ import {
   Bai4,
   Chuyenmahinh,
   Gif,
+  ChangeTheme,
+  Pickimgcamera,
 } from './src';
 
 const App = () => {
@@ -25,8 +27,10 @@ const App = () => {
     //======================================================================
     //<Selecbox></Selecbox>
     // <Camera></Camera>
-    <Test></Test>
+    // <Test></Test>
     //<Gif></Gif>
+    //<ChangeTheme></ChangeTheme>
+    <Pickimgcamera></Pickimgcamera>
   );
 };
 

@@ -7,4 +7,18 @@ import Lap_2_1 from './Lap2_1';
 import Chuyenmahinh from './Chuyenmahinh';
 import Bai5 from './Bai5';
 import Gif from './Gif';
-export {Bai3, Bai4, Selecbox, Camera, Test, Lap_2_1, Bai5, Chuyenmahinh, Gif};
+import ChangeTheme from './ChangeTheme/ChangeTheme';
+import Pickimgcamera from './Pickimgcamera/Pickimgcamera';
+export {
+  Bai3,
+  Bai4,
+  Selecbox,
+  Camera,
+  Test,
+  Lap_2_1,
+  Bai5,
+  Chuyenmahinh,
+  Gif,
+  ChangeTheme,
+  Pickimgcamera,
+};
