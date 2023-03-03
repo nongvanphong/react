@@ -1,4 +1,8 @@
 import {
+  ActivityIndicator,
+  Animated,
+  Button,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -7,14 +11,20 @@ import {
 } from 'react-native';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import Loader from 'react-native-animated-loader';
 import Listitem from '../Listitem';
 import {SearchSource} from 'jest';
 
 const Postdata = () => {
   const [arrdata, setArrdata] = useState([]);
   const [textsearch, setTextsearch] = useState('');
-
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
+    if (arrdata.length > 0) {
+      console.log('có');
+    } else {
+      //setIsLoading(false);
+    }
     getDataUsingSimpleGetCall();
   }, []);
 
@@ -26,6 +36,7 @@ const Postdata = () => {
         //console.log('-----', JSON.stringify(response.data));
         //   console.log('response', response);
         setArrdata(response.data);
+        setIsLoading(false);
       })
       .catch(function (error) {
         // handle error
@@ -102,6 +113,8 @@ const Postdata = () => {
           <Text style={{textAlign: 'center'}}>Tìm kiếm</Text>
         </TouchableOpacity>
       </View>
+      {isLoading && <ActivityIndicator />}
+      <Text>dshsfdhjsfdjhsfdj</Text>
 
       <Listitem listdata={arrdata}></Listitem>
     </View>
